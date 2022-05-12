@@ -764,19 +764,18 @@ app.forms = {
 };
 
 app.form = {
+  init: function() {
+    return $(app.form.classes.container).each(function() {
+      return app.form.assign($(this));
+    });
+  },
   classes: {
     container: ".form--validation",
     item: ".form__element",
     inputs: "input,select,textarea"
   },
-  init: function() {
-    return $(app.form.classes.item).each(function() {
-      return app.form.assign($(this));
-    });
-  },
   assign: function(form, callback) {
     return form.find(app.form.classes.inputs).on("blur", function() {
-      console.log("aqui hay blur");
       return app.form.validate($(this).closest(app.form.classes.item));
     });
   },
@@ -792,7 +791,7 @@ app.form = {
     return pass;
   },
   validate: function(el) {
-    var account, email, input, pass, phone, points, rut, rut_nuevo;
+    var account, email, input, pass, phone, rut, rut_nuevo;
     input = el.find(app.form.classes.inputs);
     pass = true;
     if (!input.val()) {
@@ -832,20 +831,6 @@ app.form = {
         pass = false;
       }
     }
-    if (input.attr("number") === 'points') {
-      points = input.val();
-      if (points < 100 || points > 1000) {
-        pass = false;
-        input.val("");
-      }
-      input.parents(".section__form__box__body").find(".form__element").each(function() {
-        var value;
-        value = $(this).find("input").val();
-        if (value.length > 1) {
-          return pass = true;
-        }
-      });
-    }
     if (input.attr("number") === 'serie') {
       account = input.val();
       if (account.length >= 9 && account.length <= 12) {
@@ -854,9 +839,6 @@ app.form = {
         $(".input-serie").val("");
         pass = false;
       }
-    }
-    if (input.is(':disabled')) {
-      pass = true;
     }
     if (!pass) {
       el.addClass(app.form.classes.item.replace(".", "") + "--error");
@@ -1054,10 +1036,6 @@ app.modal = {
     $("[data-modal-demre]").click(function(e) {
       e.preventDefault();
       return app.modal.open(".modal--demre");
-    });
-    $("[data-modal-points]").click(function(e) {
-      e.preventDefault();
-      return app.modal.open(".modal--points");
     });
     $("[data-modal-certification]").click(function(e) {
       e.preventDefault();
@@ -1434,7 +1412,7 @@ app.steps = {
         return $(this).parents(".form__buttons").siblings(".form__alert").addClass("form__alert--show");
       }
     });
-    $("[data-prev-step]").click(function() {
+    return $("[data-prev-step]").click(function() {
       var index, index_int;
       $(this).parents(".section__step").removeClass("section__step--show");
       index = $(this).parents(".section__step").attr("data-index");
@@ -1465,21 +1443,6 @@ app.steps = {
           return $("header .header__certifications").removeClass("header__certifications--show");
         }
       });
-    });
-    return $('.cond-check').change(function() {
-      var box_elements;
-      if ($(this).val() === "2") {
-        box_elements = $(this).parents(".section__form__box__body");
-        return $(this).parents(".section__form__box__body").find(".form__element").each(function() {
-          $(this).find("input").val('');
-          return $(this).find("input").prop('disabled', true);
-        });
-      } else {
-        box_elements = $(this).parents(".section__form__box__body");
-        return $(this).parents(".section__form__box__body").find(".form__element").each(function() {
-          return $(this).find("input").prop('disabled', false);
-        });
-      }
     });
   }
 };
