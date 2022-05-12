@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=40287" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=40287" type="text/javascript"></script>
+    <link href="css/main.css?v=64797" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=64797" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -217,7 +217,7 @@
           <div data-index="4" class="section__step">
             <div class="section__header">
               <h2 class="section__title"><strong>Juan</strong>, de acuerdo a tus ensayos</h2>
-              <p class="section__description">¿Qué puntaje crees que podrías obtener en la Prueba?</p>
+              <p class="section__description">¿Qué puntaje crees que podrías obtener?</p>
             </div>
             <div class="section__body">
               <div class="section__bg"> 
@@ -243,52 +243,6 @@
                         <div class="form__title">Promedio de notas</div>
                         <div class="form__input"> 
                           <input type="number" name="#" placeholder="1,0 a 7.0">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="section__form__box section__form__box--minheight-3">
-                      <div class="section__form__box__header">
-                        <div class="section__form__header__texts"><span class="section__form__subtitle">Puntajes obtenidos</span>
-                          <div class="section__form__title">PDT 2021</div>
-                        </div>
-                        <div class="section__form__info">
-                          <div class="section__form__circle"><span>i</span></div>
-                          <div class="section__form__tooltip">
-                            <h5>PDT 2021</h5>
-                            <p>Corresponde a la PDT (prueba de transición), que fue rendida en enero 2022. Podrás usar estos puntajes y además rendir la PDT invierno y PAES. Luego de esto, se podrá postular con la mejor combinación de puntajes, a partir  del proceso de admisión 2023.</p>
-                            <h5>Escala nueva</h5>
-                            <p>A partir de junio 2022 comenzará a utilizarse una nueva escala de medición, que va entre los 100 y 1.000 puntos.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="section__form__box__body">
-                        <div class="section__button"> <a data-modal-points class="btn btn--small">Cargar puntaje 2021</a></div>
-                        <p class="section__info">*Tus puntajes fueron reconvertidos a la nueva escala de 100 a 1.000 pts. </p>
-                        <div class="form__element"> 
-                          <div class="form__title">Comprensión Lectora</div>
-                          <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="800" disabled>
-                          </div>
-                        </div>
-                        <div class="form__element"> 
-                          <div class="form__title">Matemática</div>
-                          <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="830" disabled>
-                          </div>
-                        </div>
-                        <div class="form__element"> 
-                          <div class="form__title">Historia y CCSS</div>
-                          <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="800" disabled>
-                          </div>
-                        </div>
-                        <div class="form__element"> 
-                          <div class="form__title">Ciencias</div>
-                          <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="750" disabled>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -356,6 +310,77 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box section__form__box--minheight-3">
+                      <div class="section__form__box__header">
+                        <div class="section__form__header__texts"><span class="section__form__subtitle">Ingresa puntajes simulados</span>
+                          <div class="section__form__title">PAES 2022</div>
+                        </div>
+                        <div class="section__form__info">
+                          <div class="section__form__circle"><span>i</span></div>
+                          <div class="section__form__tooltip">
+                            <h5>PAES 2022</h5>
+                            <p>Corresponde a la prueba que se aplicará desde el proceso de admisión 2023. La prueba de matemática se dividirá en dos, una general y obligatoria para todas las carreras (Matemática 1) y otra, pensada especialmente para las carreras científicas, la cual será opcional (Matemática 2).</p>
+                            <h5>Escala nueva</h5>
+                            <p>A partir de junio 2022 comenzará a utilizarse una nueva escala de medición, que va entre los 100 y 1.000 puntos.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__form__box__body">
+                        <div class="form__element__checkbox form__element__checkbox--info">
+                          <div class="form__title">¿Rendirás esta prueba?</div>
+                          <div class="form__flex">
+                            <div class="form__checkboxs">
+                              <div class="form__checkbox">
+                                <div class="form__input">
+                                  <input type="radio" name="paes" value="1" checked class="cond-check">
+                                </div>
+                                <div class="form__text">Si</div>
+                              </div>
+                              <div class="form__checkbox">
+                                <div class="form__input">
+                                  <input type="radio" name="paes" value="2" class="cond-check">
+                                </div>
+                                <div class="form__text">No</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__element"> 
+                          <div class="form__title">Comprensión Lectora</div>
+                          <div class="form__input"> 
+                            <input type="number" name="#" number="points" placeholder="100 a 1.000 pts">
+                          </div>
+                        </div>
+                        <div class="form__flex form__flex--inputs">
+                          <div class="form__element"> 
+                            <div class="form__title">Matemáticas 1</div>
+                            <div class="form__input"> 
+                              <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                            </div>
+                          </div>
+                          <div class="form__element"> 
+                            <div class="form__title">Matemáticas 2</div>
+                            <div class="form__input"> 
+                              <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__element"> 
+                          <div class="form__title">Historia y CCSS</div>
+                          <div class="form__input"> 
+                            <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                          </div>
+                        </div>
+                        <div class="form__element"> 
+                          <div class="form__title">Ciencias</div>
+                          <div class="form__input"> 
+                            <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -384,7 +409,15 @@
                       <th>PDT 2021</th>
                       <th>PDT INV 2022</th>
                       <th>PAES 2022</th>
-                      <th>PUNTAJE FINAL</th>
+                      <th>PUNTAJE FINAL
+                        <div class="table__info">
+                          <div class="table__circle"><span>i</span></div>
+                          <div class="table__tooltip"> 
+                            <h5>CAE:</h5>
+                            <p>Crédito con Aval del Estado, corresponde a un préstamo bancario que financia tus estudios de manera parcial o total, el cual debes comenzar a pagar en cuotas luego de terminar la Universidad.</p>
+                          </div>
+                        </div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -859,19 +892,19 @@
             </ul>
             <div class="section__content__more">
               <ul> 
-                <li>A facilisis in consequat praesent nullam gravida curae
+                <li>Mattis tristique lobortis ligula interdum vel malesuada pellentesque
                 </li>
-                <li>Lacus lectus ut auctor adipiscing integer commodo est
+                <li>Sapien erat eu risus ad nisl vehicula ut
                 </li>
-                <li>Iaculis quis sodales torquent ante luctus donec ligula
+                <li>Dui blandit adipiscing pretium sed eleifend nisl aenean
                 </li>
-                <li>Cursus semper pretium faucibus accumsan platea ligula semper
+                <li>Inceptos non per nisl felis colus auctor eu
                 </li>
-                <li>Colus praesent magna mi litora mattis malesuada proin
+                <li>Lectus volutpat class potenti et libero fames nostra
                 </li>
-                <li>Sagittis morbi dictumst ut viverra sollicitudin ullamcorper taciti
+                <li>Mattis aenean orci consectetur conubia adipiscing tempus adipiscing
                 </li>
-                <li>Habitasse viverra nulla fringilla pretium dictum lobortis aenean
+                <li>Mi aliquet convallis arcu diam purus leo mi
                 </li>
               </ul>
             </div><a class="section__more">Ver más<span class="fa fa-angle-down"></span></a>

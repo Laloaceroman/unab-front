@@ -2048,6 +2048,7 @@ textarea {
 }
 .form__flex.form__flex--inputs .form__element {
   margin: 0 5px;
+  width: 100%;
 }
 .form__element__checkbox {
   padding-top: 20px;
@@ -3727,6 +3728,83 @@ section.section--finish .section__body .section__card .section__values.section__
     line-height: 22px;
     padding: 10px;
   }
+}
+.table thead th:last-child {
+  text-align: left;
+  position: relative;
+}
+.table thead th .table__info {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 3;
+}
+@media (min-width: 720px) {
+  .table thead th .table__info {
+    top: 10px;
+    right: 10px;
+  }
+}
+.table thead th .table__info:hover .table__tooltip {
+  display: block;
+}
+.table thead th .table__info .table__circle {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+@media (min-width: 720px) {
+  .table thead th .table__info .table__circle {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.table thead th .table__info .table__circle span {
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+}
+.table thead th .table__info .table__tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #8692a6;
+  color: #151e2f;
+  border-radius: 15px;
+}
+@media (min-width: 720px) {
+  .table thead th .table__info .table__tooltip {
+    width: 300px;
+  }
+}
+.table thead th .table__info .table__tooltip>* {
+  margin-bottom: 5px;
+}
+.table thead th .table__info .table__tooltip h1,
+.table thead th .table__info .table__tooltip h2,
+.table thead th .table__info .table__tooltip h3,
+.table thead th .table__info .table__tooltip h4,
+.table thead th .table__info .table__tooltip h5 {
+  color: #1e75db;
+}
+.table thead th .table__info .table__tooltip p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
 }
 .table tbody tr {
   border: 1px solid #c4c4c4;

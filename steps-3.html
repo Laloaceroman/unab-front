@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=22808" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=22808" type="text/javascript"></script>
+    <link href="css/main.css?v=52937" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=52937" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -54,7 +54,7 @@
                   </div>
                   <div class="section__buttons"> <a href="index.html" class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
                   <div class="section__progress"> 
-                    <div class="section__number">1/7</div>
+                    <div class="section__number">1/6</div>
                     <div class="section__progress__bar"></div>
                   </div>
                 </div>
@@ -109,8 +109,8 @@
             <div class="section__footer">
               <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
               <div class="section__progress"> 
-                <div class="section__number">2/7</div>
-                <div class="section__progress__bar step--2"> </div>
+                <div class="section__number">2/6</div>
+                <div class="section__progress__bar step--3"></div>
               </div>
             </div>
           </div>
@@ -209,21 +209,21 @@
             <div class="section__footer">
               <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
               <div class="section__progress"> 
-                <div class="section__number">3/7</div>
-                <div class="section__progress__bar step--3"></div>
+                <div class="section__number">3/6</div>
+                <div class="section__progress__bar step--4"></div>
               </div>
             </div>
           </div>
           <div data-index="4" class="section__step">
             <div class="section__header">
               <h2 class="section__title"><strong>Juan</strong>, de acuerdo a tus ensayos</h2>
-              <p class="section__description">¿Qué puntaje crees que podrías obtener en la Prueba?</p>
+              <p class="section__description">¿Qué puntaje crees que podrías obtener?</p>
             </div>
             <div class="section__body">
               <div class="section__bg"> 
                 <div class="bg"> <img src="img/uploads/2.jpg"></div>
               </div>
-              <div class="section__wrap section__wrap--md">
+              <div class="section__wrap section__wrap--sm">
                 <div class="cols"> 
                   <div class="col-xs-12">
                     <div class="section__form__box">
@@ -248,46 +248,52 @@
                     </div>
                   </div>
                   <div class="col-xs-12">
-                    <div class="section__form__box section__form__box--minheight-3">
+                    <div class="section__form__box section__form__box--minheight-2">
                       <div class="section__form__box__header">
-                        <div class="section__form__header__texts"><span class="section__form__subtitle">Puntajes obtenidos</span>
-                          <div class="section__form__title">PDT 2021</div>
+                        <div class="section__form__header__texts"><span class="section__form__subtitle">Ingresa puntajes simulados</span>
+                          <div class="section__form__title">PAES 2022</div>
                         </div>
                         <div class="section__form__info">
                           <div class="section__form__circle"><span>i</span></div>
                           <div class="section__form__tooltip">
-                            <h5>PDT 2021</h5>
-                            <p>Corresponde a la PDT (prueba de transición), que fue rendida en enero 2022. Podrás usar estos puntajes y además rendir la PDT invierno y PAES. Luego de esto, se podrá postular con la mejor combinación de puntajes, a partir  del proceso de admisión 2023.</p>
+                            <h5>PAES 2022</h5>
+                            <p>Corresponde a la prueba que se aplicará desde el proceso de admisión 2023. La prueba de matemática se dividirá en dos, una general y obligatoria para todas las carreras (Matemática 1) y otra, pensada especialmente para las carreras científicas, la cual será opcional (Matemática 2).</p>
                             <h5>Escala nueva</h5>
                             <p>A partir de junio 2022 comenzará a utilizarse una nueva escala de medición, que va entre los 100 y 1.000 puntos.</p>
                           </div>
                         </div>
                       </div>
                       <div class="section__form__box__body">
-                        <div class="section__button"> <a data-modal-points class="btn btn--small">Cargar puntaje 2021</a></div>
-                        <p class="section__info">*Tus puntajes fueron reconvertidos a la nueva escala de 100 a 1.000 pts. </p>
                         <div class="form__element"> 
                           <div class="form__title">Comprensión Lectora</div>
                           <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="800" disabled>
+                            <input type="number" name="#" number="points" placeholder="100 a 1.000 pts">
                           </div>
                         </div>
-                        <div class="form__element"> 
-                          <div class="form__title">Matemática</div>
-                          <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="830" disabled>
+                        <div class="form__flex form__flex--inputs">
+                          <div class="form__element"> 
+                            <div class="form__title">Matemáticas 1</div>
+                            <div class="form__input"> 
+                              <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                            </div>
+                          </div>
+                          <div class="form__element"> 
+                            <div class="form__title">Matemáticas 2</div>
+                            <div class="form__input"> 
+                              <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
+                            </div>
                           </div>
                         </div>
                         <div class="form__element"> 
                           <div class="form__title">Historia y CCSS</div>
                           <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="800" disabled>
+                            <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
                           </div>
                         </div>
                         <div class="form__element"> 
                           <div class="form__title">Ciencias</div>
                           <div class="form__input"> 
-                            <input type="number" name="#" placeholder="Ej: 600" value="750" disabled>
+                            <input type="number" number="points" name="#" placeholder="100 a 1.000 pts">
                           </div>
                         </div>
                       </div>
@@ -299,80 +305,12 @@
             <div class="section__footer">
               <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
               <div class="section__progress"> 
-                <div class="section__number">4/7</div>
-                <div class="section__progress__bar step--4"> </div>
+                <div class="section__number">4/6</div>
+                <div class="section__progress__bar step--5"></div>
               </div>
             </div>
           </div>
           <div data-index="5" class="section__step">
-            <div class="section__header">
-              <h2 class="section__title">Resumen de tus puntajes</h2>
-              <p class="section__description">Usamos tus máximos puntajes para la simulación</p>
-            </div>
-            <div class="section__body">
-              <div class="section__bg"> 
-                <div class="bg"> <img src="img/uploads/2.jpg"></div>
-              </div>
-              <div class="section__wrap section__wrap--md">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Materia</th>
-                      <th>PDT 2021</th>
-                      <th>PDT INV 2022</th>
-                      <th>PAES 2022</th>
-                      <th>PUNTAJE FINAL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>COMP LECT</td>
-                      <td>700 pts</td>
-                      <td class="marked">800 pts</td>
-                      <td>700 pts</td>
-                      <td>800 pts</td>
-                    </tr>
-                    <tr>
-                      <td>MAT 1</td>
-                      <td class="marked">750 pts</td>
-                      <td>600 pts</td>
-                      <td>700 pts</td>
-                      <td>750 pts</td>
-                    </tr>
-                    <tr>
-                      <td>MAT 2</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td class="marked">800 pts</td>
-                      <td>800 pts</td>
-                    </tr>
-                    <tr>
-                      <td>HIST Y CCSS</td>
-                      <td>650 pts</td>
-                      <td>680 pts</td>
-                      <td class="marked">700 pts</td>
-                      <td>700 pts</td>
-                    </tr>
-                    <tr>
-                      <td>CIEN</td>
-                      <td class="marked">600 pts</td>
-                      <td>500 pts</td>
-                      <td>500 pts</td>
-                      <td>600 pts</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="section__footer">
-              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver		</a><a data-next-step class="btn">Siguiente </a></div>
-              <div class="section__progress"> 
-                <div class="section__number">5/7</div>
-                <div class="section__progress__bar step--5"> </div>
-              </div>
-            </div>
-          </div>
-          <div data-index="6" class="section__step">
             <div class="section__header">
               <h2 class="section__title"><strong>Juan</strong>, ya vamos terminando...</h2>
               <p class="section__description">Completa estos datos, que nos ayudarán a calcular el valor de tu carrera.</p>
@@ -492,12 +430,12 @@
             <div class="section__footer">
               <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver		</a><a data-next-step class="btn">Siguiente </a></div>
               <div class="section__progress"> 
-                <div class="section__number">6/7</div>
+                <div class="section__number">5/6</div>
                 <div class="section__progress__bar step--6"></div>
               </div>
             </div>
           </div>
-          <div data-index="7" class="section__step">
+          <div data-index="6" class="section__step">
             <div class="section__header">
               <h2 class="section__title"><strong>Juan</strong>, lo más importante</h2>
               <p class="section__description">¿Qué carrera quieres estudiar?</p>
@@ -553,7 +491,7 @@
                 <button class="btn">Siguiente </button>
               </div>
               <div class="section__progress"> 
-                <div class="section__number">7/7</div>
+                <div class="section__number">6/6</div>
                 <div class="section__progress__bar step--7"></div>
               </div>
             </div>
@@ -796,19 +734,19 @@
             </ul>
             <div class="section__content__more">
               <ul> 
-                <li>Aptent congue facilisis fermentum vitae tempor eu vestibulum
+                <li>Auctor cras colus laoreet vehicula risus blandit gravida
                 </li>
-                <li>Posuere lacinia blandit dictumst dapibus risus vestibulum libero
+                <li>Sem nibh praesent commodo mollis arcu pretium malesuada
                 </li>
-                <li>Elit vehicula feugiat leo congue porta pharetra dictumst
+                <li>Pharetra ullamcorper dictumst faucibus tellus cubilia neque auctor
                 </li>
-                <li>Malesuada est libero porttitor vivamus pharetra egestas primis
+                <li>Feugiat morbi vivamus torquent mattis dictumst curabitur tellus
                 </li>
-                <li>Vitae lobortis accumsan commodo erat sagittis eu viverra
+                <li>Magna lacinia ultrices convallis est cras cras sagittis
                 </li>
-                <li>Integer mollis morbi porta est vulputate senectus condimentum
+                <li>Non aptent lobortis in praesent ligula quisque a
                 </li>
-                <li>Nullam pulvinar eget aliquet auctor dictum integer suscipit
+                <li>Fringilla pharetra tortor odio arcu fermentum nostra pharetra
                 </li>
               </ul>
             </div><a class="section__more">Ver más<span class="fa fa-angle-down"></span></a>
