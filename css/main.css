@@ -3102,9 +3102,11 @@ section.section--steps .section__step .section__form__box {
     min-height: 480px;
   }
 }
-section.section--steps .section__step .section__form__box.section__form__box--360 {
-  max-width: 360px;
-  margin: 0 auto;
+@media (min-width: 720px) {
+  section.section--steps .section__step .section__form__box.section__form__box--360 {
+    max-width: 360px;
+    margin: 0 auto;
+  }
 }
 section.section--steps .section__step .section__form__box .section__form__box__header {
   display: -ms-flexbox;
@@ -3732,6 +3734,15 @@ section.section--finish .section__body .section__card .section__values.section__
 .table thead th:last-child {
   text-align: left;
   position: relative;
+}
+.table thead th:last-child span {
+  display: inline-block;
+  max-width: 50%;
+}
+@media (min-width: 720px) {
+  .table thead th:last-child span {
+    max-width: 100%;
+  }
 }
 .table thead th .table__info {
   position: absolute;
