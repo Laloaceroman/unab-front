@@ -2187,6 +2187,7 @@ textarea {
   font-weight: 500;
   z-index: 5;
   display: none;
+  color: #f00;
 }
 .form__element.form__element--phone .form__input input {
   padding-left: 60px;
